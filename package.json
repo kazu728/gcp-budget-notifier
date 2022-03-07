@@ -1,0 +1,44 @@
+{
+  "name": "budget-notifier",
+  "version": "1.0.0",
+  "description": "TS template",
+  "author": "kzmat",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kzmat/budget-notifier"
+  },
+  "bugs": "https://github.com/kzmat/budget-notifier/issues",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn clean && tsc -p tsconfig.lib.json",
+    "clean": "rimraf ./dist",
+    "fix:eslint": "eslint --fix --ext ts,tsx ./src",
+    "fix:prettier": "prettier --write \"./**/*.{md,json}\"",
+    "lint:eslint": "eslint --ext ts,tsx ./src",
+    "lint:prettier": "prettier --check \"./**/*.{md,json}\"",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.1",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/node": "^17.0.21",
+    "@types/prettier": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "c8": "^7.11.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2",
+    "vitest": "^0.5.9"
+  }
+}
