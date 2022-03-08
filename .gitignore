@@ -128,5 +128,6 @@ dist
 
 # Local History for Visual Studio Code
 .history/
-
-
+build/
+**/.terraform/
+**/*.tfstate
